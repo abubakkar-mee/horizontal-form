@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+        button{
+            display:block;
+            margin: 0 auto;
+            padding: 15px 30px;
+            border: none;
+            outline:none;
+            border-radius: 8px;
+            background-color: rgb(14, 15, 42);
+            color: white;
+            font-weight: bold;
+            transition:all .2s ease;
+            cursor: pointer;
+            margin-bottom: 35px;
+        }
+        button:hover{
+            transform: scale(1.10);
+        }
+        .container{
+        margin: 0 auto;
+        width: 65%
+        }
+
+
+        @media only screen and (min-width:1000px) {
+            .container{
+            margin: 0 auto;
+            width: 40%
+        }   
+        }
+
+        .input-group{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .placeholder{
+            width: 170px;
+        }
+        .input{
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+    <button id="button" class="button">Click me ❤</button>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="passport">Your possport number :</label>
+            <input id="passport" class="input" type="text">
+        </div>
+        <div class="input-group">
+            <label for="nid">Your national identification</label>
+            <input id="nid" class="input" type="text">
+        </div>
+        <div class="input-group">
+            <label for="driving-licence">Your driving licence number</label>
+            <input id="driving-licence" class="input" type="text">
+        </div>
+        <div class="input-group">
+            <label for="">select your gender</label>
+            <div class="placeholder">
+                <input id="male-input" name="gender" type="radio" value="male">
+                <label for="male-input">Male</label>
+                
+                <input id="female-input" type="radio" name="gender" value="female">
+                <label for="female-input">female</label>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="">Are you married?</label>
+            <div class="placeholder">
+                <input name="married" type="checkbox">
+                <label for="">married? then check</label>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="select-division">Select your division</label>
+            <select id="select-division" class="input" name="" id="">
+                <option value="">Select...</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Khulna">Khulna</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="color">Select your favorite color</label>
+            <div class="placeholder">
+                <input type="color">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
